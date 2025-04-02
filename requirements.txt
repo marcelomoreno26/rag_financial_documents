@@ -1,0 +1,12 @@
+# Python 3.10
+datasets>=3.4.1
+fastapi>=0.115.11
+llama-index>=0.12.25
+llama-index-llms-huggingface>=0.4.2
+llama-index-embeddings-huggingface>=0.5.2
+llama-index-llms-vllm>=0.5.0
+numpy>=1.26.4
+ragas>=0.2.14
+setuptools>=76.0.0
+uvicorn>=0.34.0
+vllm>=0.7.3
