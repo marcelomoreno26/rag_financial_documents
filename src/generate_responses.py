@@ -10,10 +10,10 @@ from argparse import ArgumentParser
 
 if __name__=="__main__":
     top_k = [5, 10]
-    retrieval_type = ["none", "HyDE", "query_rewriting"]
+    retrieval_technique = ["none", "HyDE", "query_rewriting"]
     rerank = [True, False]
 
-    combinations = list(itertools.product(top_k, retrieval_type, rerank))
+    combinations = list(itertools.product(top_k, retrieval_technique, rerank))
     grid = [{"top_k": k, "retrieval_technique": r, "rerank": re} for k, r, re in combinations]
 
 

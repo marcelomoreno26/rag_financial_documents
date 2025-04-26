@@ -89,5 +89,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.tokenizer if args.tokenizer else args.model_name)
-    model = LLM(args.model_name, max_model_len=args.max_model_len, gpu_memory_utilization=args.gpu_memory_utilization)
+    model = LLM(args.model_name, max_model_len=args.max_model_len, gpu_memory_utilization=args.gpu_memory_utilization, dtype="half")
     uvicorn.run(app, host="0.0.0.0", port=args.port)

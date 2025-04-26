@@ -10,3 +10,4 @@ ragas>=0.2.14
 setuptools>=76.0.0
 uvicorn>=0.34.0
 vllm>=0.7.3
+polyfuzz>=0.4.2
